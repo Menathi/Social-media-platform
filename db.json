@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "_id": "8f84ba84-35bc-4400-af11-5e07dda2672f",
+      "username": "menathi_velmurugan",
+      "email": "menathivel@gmail.com",
+      "password": "$2a$10$IRTdxhqNPPPJXl0xn1wuZORTIDFf3y3qfjm9Cc0fLETdmQcZCu326",
+      "bio": "Finding beauty in the ordinary",
+      "avatar": "/uploads/1784364921456-645644991.jpeg",
+      "followers": [],
+      "following": [],
+      "createdAt": "2026-07-18T08:09:51.382Z"
+    },
+    {
+      "_id": "7fff8aab-a548-4435-be35-0d09f400d192",
+      "username": "mahasd",
+      "email": "mahasd@gmail.com",
+      "password": "$2a$10$5K3ejc5knNIpl.fID7h4kOQ61Nr.9OUHnMbhS35DJ7Nk5UpD2YcWG",
+      "bio": "",
+      "avatar": "",
+      "followers": [],
+      "following": [],
+      "createdAt": "2026-07-18T08:31:14.659Z"
+    },
+    {
+      "_id": "dfb715ed-4e06-463d-81d8-ff6e9a8b63ba",
+      "username": "priya_maha",
+      "email": "priya@gmail.com",
+      "password": "$2a$10$1A6NvTdjYPVI2dzXwtEV0OxZM5Agm4B4z8PSu.FgwA.W8s/n/hMVG",
+      "bio": "",
+      "avatar": "",
+      "followers": [],
+      "following": [],
+      "createdAt": "2026-07-18T08:44:26.053Z"
+    }
+  ],
+  "posts": [
+    {
+      "_id": "0fbc3de2-7969-4c90-b22e-2e80fadadc9d",
+      "author": "7fff8aab-a548-4435-be35-0d09f400d192",
+      "caption": "Where Every cup tells a story!!!",
+      "media": "",
+      "mediaType": "",
+      "tags": [],
+      "likes": [],
+      "comments": [],
+      "createdAt": "2026-07-18T08:40:14.067Z"
+    },
+    {
+      "_id": "75b66344-8f97-4066-95a4-911d86cae27d",
+      "author": "dfb715ed-4e06-463d-81d8-ff6e9a8b63ba",
+      "caption": "Where every cup tells a story!!!",
+      "media": "/uploads/1784364330489-342512160.jpeg",
+      "mediaType": "image",
+      "tags": [
+        "8f84ba84-35bc-4400-af11-5e07dda2672f"
+      ],
+      "likes": [],
+      "comments": [],
+      "createdAt": "2026-07-18T08:45:30.499Z"
+    },
+    {
+      "_id": "0f857069-267e-4dff-9d5b-4e3288163758",
+      "author": "dfb715ed-4e06-463d-81d8-ff6e9a8b63ba",
+      "caption": "Keep your face to the sunshine and you cannot see the shadows. It's what the sunflowers do!!!",
+      "media": "/uploads/1784364486254-306987139.jpeg",
+      "mediaType": "image",
+      "tags": [
+        "8f84ba84-35bc-4400-af11-5e07dda2672f"
+      ],
+      "likes": [],
+      "comments": [],
+      "createdAt": "2026-07-18T08:48:06.265Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "227c20da-f082-4df2-9527-2c51acf3a98f",
+      "recipient": "8f84ba84-35bc-4400-af11-5e07dda2672f",
+      "sender": "dfb715ed-4e06-463d-81d8-ff6e9a8b63ba",
+      "type": "tag",
+      "post": "75b66344-8f97-4066-95a4-911d86cae27d",
+      "read": true,
+      "createdAt": "2026-07-18T08:45:30.504Z"
+    },
+    {
+      "_id": "ff6a79b9-fa58-4d6a-a11b-2d9c3854842e",
+      "recipient": "8f84ba84-35bc-4400-af11-5e07dda2672f",
+      "sender": "dfb715ed-4e06-463d-81d8-ff6e9a8b63ba",
+      "type": "tag",
+      "post": "0f857069-267e-4dff-9d5b-4e3288163758",
+      "read": true,
+      "createdAt": "2026-07-18T08:48:06.275Z"
+    }
+  ]
+}
