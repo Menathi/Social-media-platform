@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dispatch — Profile</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span>Dispatch</span><span class="tag">v1</span></div>
+  <nav>
+    <a href="/index.html">Feed</a>
+    <a id="navProfileLink" href="#">Profile</a>
+    <button id="notifBell" class="link" style="position:relative;">
+      Notifications
+      <span id="notifBadge" class="hidden" style="position:absolute; top:-8px; right:-16px; background:var(--stamp-red); color:var(--paper); font-family:'IBM Plex Mono',monospace; font-size:0.65rem; padding:1px 5px; border-radius:8px;"></span>
+    </button>
+    <button id="logoutBtn" class="link">Log out</button>
+  </nav>
+  <div id="notifPanel" class="notif-panel hidden"></div>
+</header>
+
+<div class="container">
+  <div class="card" id="profileHead"></div>
+  <div id="editPanel" class="card hidden">
+    <h3 style="margin-bottom:10px;">Edit profile</h3>
+    <form id="editForm">
+      <label class="mono">Bio</label>
+      <textarea id="bioInput" maxlength="200" style="min-height:60px; margin-top:6px;"></textarea>
+      <label class="mono" style="display:block; margin-top:10px;">Avatar image</label>
+      <input type="file" id="avatarInput" accept="image/*" style="margin-top:6px;" />
+      <div style="margin-top:14px; display:flex; gap:8px;">
+        <button type="submit" class="primary">Save</button>
+        <button type="button" id="cancelEdit">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <div id="profilePosts"></div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/post-render.js"></script>
+<script src="/js/profile.js"></script>
+</body>
+</html>
