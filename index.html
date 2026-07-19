@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dispatch — Feed</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span>Dispatch</span><span class="tag">v1</span></div>
+  <nav>
+    <a href="/index.html">Feed</a>
+    <a id="navProfileLink" href="#">Profile</a>
+    <button id="notifBell" class="link" style="position:relative;">
+      Notifications
+      <span id="notifBadge" class="hidden" style="position:absolute; top:-8px; right:-16px; background:var(--stamp-red); color:var(--paper); font-family:'IBM Plex Mono',monospace; font-size:0.65rem; padding:1px 5px; border-radius:8px;"></span>
+    </button>
+    <button id="logoutBtn" class="link">Log out</button>
+  </nav>
+  <div id="notifPanel" class="notif-panel hidden"></div>
+</header>
+
+<div class="container">
+
+  <div class="card composer">
+    <form id="composerForm">
+      <textarea id="captionInput" placeholder="What's happening?" maxlength="1000"></textarea>
+      <input id="tagsInput" class="tags-input" type="text" placeholder="Tag people (comma-separated usernames)" />
+      <div class="composer-row">
+        <label class="mono" style="cursor:pointer;">
+          📎 <input type="file" id="mediaInput" accept="image/*,video/*" style="display:none;" />
+          <span id="fileLabel" class="file-label"></span>
+        </label>
+        <button type="submit" class="primary">Post</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="tabs">
+    <button class="active" data-feed="feed">All posts</button>
+    <button data-feed="following">Following</button>
+    <button data-feed="trending">Trending</button>
+  </div>
+
+  <div id="feedList"></div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/post-render.js"></script>
+<script src="/js/feed.js"></script>
+</body>
+</html>
